@@ -8,6 +8,9 @@ endif
 "make sure that ~/.config/nvim/nvim.vim sets source ~/.vim/vimrc
 if has('nvim')
   call plug#begin('~/.config/nvim/plugged')
+
+  "deoplete for complete support
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif 
 
 " Make sure you use single quotes
@@ -20,6 +23,10 @@ Plug 'scrooloose/nerdtree'
 
 " vim-ruby
 Plug 'vim-ruby/vim-ruby'
+
+" js support vim-jsx
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 " ack.vim
 Plug 'mileszs/ack.vim'
@@ -73,8 +80,12 @@ set completeopt=longest,menuone
 "highlight as you search
 set incsearch
 
+" add jxs to .js file
+let g:jsx_ext_required = 0
+
 if has('nvim')
   let g:rubycomplete_rails = 1
+  let g:deoplete#enable_at_startup = 1
 endif 
 
 "leader mappings

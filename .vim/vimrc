@@ -28,6 +28,12 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 
+" highlighting jxs
+Plug 'Valloric/MatchTagAlways'
+
+" oceanic-next colour good for react
+Plug 'mhartington/oceanic-next'
+
 " ack.vim
 Plug 'mileszs/ack.vim'
 
@@ -46,7 +52,7 @@ syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
-colorscheme Tomorrow-Night
+" colorscheme Tomorrow-Night
 set colorcolumn=90 "sets the far right column
 set number
 set nowrap
@@ -83,10 +89,25 @@ set incsearch
 " add jxs to .js file
 let g:jsx_ext_required = 0
 
+" highlighting plug enable jsx
+let g:mta_filetypes = {
+    \ 'javascript.jsx' : 1,
+    \}
+
 if has('nvim')
   let g:rubycomplete_rails = 1
   let g:deoplete#enable_at_startup = 1
 endif 
+
+" oceanic settings needed
+" theme
+syntax enable
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+colorscheme OceanicNext
 
 "leader mappings
 nnoremap <leader>x :noh<enter>

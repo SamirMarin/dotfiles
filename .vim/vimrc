@@ -43,6 +43,9 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'junegunn/fzf.vim'
 
+" syntax for solidity
+Plug 'tomlion/vim-solidity'
+
 
 " Initialize plugin system
 call plug#end()

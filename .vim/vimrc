@@ -34,6 +34,9 @@ Plug 'Valloric/MatchTagAlways'
 " oceanic-next colour good for react
 Plug 'mhartington/oceanic-next'
 
+" vim afterglow sublime like
+Plug 'danilo-augusto/vim-afterglow'
+
 " ack.vim
 Plug 'mileszs/ack.vim'
 
@@ -110,7 +113,8 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-colorscheme OceanicNext
+"colorscheme OceanicNext
+colorscheme afterglow
 
 "leader mappings
 nnoremap <leader>x :noh<enter>
@@ -121,3 +125,4 @@ nnoremap <leader>n :set norelativenumber<enter>
 nnoremap <leader>s :%s//
 nnoremap <leader>h :res 
 nnoremap <leader>w :vertical resize 
+nnoremap <leader>t :NERDTree<enter>

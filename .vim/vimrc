@@ -116,6 +116,9 @@ endif
 "colorscheme OceanicNext
 colorscheme afterglow
 
+"jenkins file syntax
+au BufNewFile,BufRead Jenkinsfile setf groovy
+
 "leader mappings
 nnoremap <leader>x :noh<enter>
 nnoremap <leader>f :Files<enter>

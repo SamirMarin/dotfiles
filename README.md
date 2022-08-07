@@ -16,9 +16,9 @@ cd ${this_repo}
 bash link_dot_vim.sh
 ```
 
-This will link the vimrc viles for vim and neovim. Note the vimcr files comes with many vim plugins. This script will also install https://github.com/junegunn/vim-plug manager for vim and neovim.
+This will link the vimrc viles for vim and neovim. Note the vimcr files comes with several vim plugins. This script will also install https://github.com/junegunn/vim-plug manager for vim and neovim.
 
-once the plug pluin manager is installed you can istall all the plug ins by running
+once the plug plugin manager is installed you can install the plugins by running
 
 ```
 :PlugUpdate

@@ -128,6 +128,11 @@ colorscheme afterglow
 "jenkins file syntax
 au BufNewFile,BufRead Jenkinsfile setf groovy
 
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+"js pretty uses pip install jsbeautifier
+"autocmd FileType javascript setlocal equalprg=js-beautify\ --stdin
+
 "leader mappings
 nnoremap <leader>x :noh<enter>
 nnoremap <leader>f :Files<enter>
@@ -139,3 +144,4 @@ nnoremap <leader>h :res
 nnoremap <leader>w :vertical resize 
 nnoremap <leader>t :NERDTreeToggle<enter>
 nnoremap <leader>y :NERDTree<enter>
+nnoremap <leader>js :%!js-beautify<enter>

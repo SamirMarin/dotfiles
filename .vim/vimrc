@@ -52,6 +52,9 @@ Plug 'tomlion/vim-solidity'
 " vim-plug
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+" vim terraform
+Plug 'hashivim/vim-terraform'
+
 
 " Initialize plugin system
 call plug#end()
